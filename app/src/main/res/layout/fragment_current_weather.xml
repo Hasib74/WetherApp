@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+
+        <TextView
+            tools:text="SearchBar Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tvCurrentDate"
+            android:text="JAN 11, 2018 - THU"
+            tools:text="JAN 11, 2018 - THU"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/tvTemperature"
+            android:textSize="80sp"
+            tools:text="17.5 C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/tvHumidity"
+            tools:text="Humidity: 49%"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:id="@+id/tvCityF"
+                    android:text="Dhaka"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/tvWeatherMain"
+                    android:text="Haze"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/tvWind"
+                    android:text="Wind"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:id="@+id/tvTime"
+                    android:text="04:56 PM"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/tvMaxMin"
+                    android:text="Max/Min: 25C/12C"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/tvPressure"
+                    android:text="Pressure"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+
+        <TextView
+            tools:text="Sunset Sunrise Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
